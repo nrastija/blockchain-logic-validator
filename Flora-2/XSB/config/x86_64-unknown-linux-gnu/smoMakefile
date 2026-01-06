@@ -74,7 +74,7 @@ xasppkg.o: xasppkg.c
 module: xsb_wrap_xasppkg.o xasppkg.o xasppkg.def
 	$(CXX) $(CFLAGS) $(LDFLAGS) -shared -o $(LIBNAME) \
 		xasppkg.o xsb_wrap_xasppkg.o $(DEFFILE) $(SMOLIB)
-	@cp $(LIBNAME) /tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu/bin
+	@cp $(LIBNAME) /tmp/XSB-26-01-06-16_27_01/config/x86_64-unknown-linux-gnu/bin
 
 nope:
 

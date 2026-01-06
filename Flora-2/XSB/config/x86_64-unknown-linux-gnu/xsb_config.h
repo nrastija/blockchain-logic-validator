@@ -1,4 +1,4 @@
-/* /tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu/xsb_config.h.  Generated from def_config.in by configure.  */
+/* /tmp/XSB-26-01-06-16_27_01/config/x86_64-unknown-linux-gnu/xsb_config.h.  Generated from def_config.in by configure.  */
 /* def_config.in.  Generated automatically from configure.in by autoheader.  */
 
 /* Define if on AIX 3.

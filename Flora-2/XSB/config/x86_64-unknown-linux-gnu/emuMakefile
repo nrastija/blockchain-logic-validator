@@ -77,12 +77,12 @@ SHELL=/bin/sh
 
 
 # The default location for installation.
-prefix=/tmp/XSB-26-01-06-15_36_23
+prefix=/tmp/XSB-26-01-06-16_27_01
 # where sources are
-srcdir=/tmp/XSB-26-01-06-15_36_23
-VPATH=/tmp/XSB-26-01-06-15_36_23
+srcdir=/tmp/XSB-26-01-06-16_27_01
+VPATH=/tmp/XSB-26-01-06-16_27_01
 # Like `prefix', but used for architecture-specific files.
-arch_config_prefix=/tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu
+arch_config_prefix=/tmp/XSB-26-01-06-16_27_01/config/x86_64-unknown-linux-gnu
 
 # Where to install XSB binaries
 bindir=$(arch_config_prefix)/bin

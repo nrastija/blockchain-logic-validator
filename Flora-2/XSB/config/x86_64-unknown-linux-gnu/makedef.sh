@@ -3,10 +3,10 @@
 # Creates an appropriate xsb.def file, given the object
 # files in XSB/config/<configname>/saved.o
 
-SRCDIR=/tmp/XSB-26-01-06-15_36_23
+SRCDIR=/tmp/XSB-26-01-06-16_27_01
 CONFIGURATION=x86_64-unknown-linux-gnu
 CONFIG_TAG=
-SRC_CONFIG_PREFIX=/tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu
+SRC_CONFIG_PREFIX=/tmp/XSB-26-01-06-16_27_01/config/x86_64-unknown-linux-gnu
 OBJS=$@
 DEFFILE=out.def
 TMPFILE=out.def.tmp
