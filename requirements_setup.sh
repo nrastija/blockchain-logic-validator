@@ -5,7 +5,39 @@
 
 
 echo "============================================"
-echo "[1/x] Instaliranje Flora-2 verzija 2.1."
+echo "[1/2] Ažuriranje sustava (dinamično)"
+echo "============================================"
+
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    DISTRO=$ID
+    echo "Detektirana distribucija: $DISTRO"
+else
+    echo "GREŠKA: Ne mogu detektirati distribuciju!"
+    exit 1
+fi
+
+case $DISTRO in
+    fedora)
+        echo "Ažuriranje Fedora sustava..."
+        sudo dnf upgrade -y
+        ;;
+    ubuntu|debian)
+        echo "Ažuriranje Ubuntu/Debian sustava..."
+        sudo apt update && sudo apt upgrade -y
+        ;;
+    arch|manjaro)
+        echo "Ažuriranje Arch/Manjaro sustava..."
+        sudo pacman -Syu --noconfirm
+        ;;
+    *)
+    echo "Error: Nepoznat Linux distro: $DISTRO"
+    echo "Preskače se ažuriranje sustava, molim da sami ažurirate sustav"
+    ;;
+esac
+
+echo "============================================"
+echo "[2/2] Instaliranje Flora-2 verzija 2.1."
 echo "============================================"
 
 # Instalacija preuzeta od dokumenta Installfest sa 2. laboratorijskih vježbi na predmetu
@@ -16,7 +48,6 @@ chmod +x flora2.run
 rm flora2.run
 
 
-
 echo "============================================"
-echo "Završena setup skripta!"
+echo "[FIN] Završena setup skripta!"
 echo "============================================"

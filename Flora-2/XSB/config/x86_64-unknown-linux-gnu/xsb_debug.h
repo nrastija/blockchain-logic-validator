@@ -1,4 +1,4 @@
-/* /tmp/XSB-26-01-06-15_26_00/config/x86_64-unknown-linux-gnu/xsb_debug.h.  Generated from def_debug.in by configure.  */
+/* /tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu/xsb_debug.h.  Generated from def_debug.in by configure.  */
 
 /* Various debug options. They are here rather than in def_config.in to make
    complete recompilation less likely, if the debugging option is requested */

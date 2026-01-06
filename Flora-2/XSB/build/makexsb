@@ -61,10 +61,10 @@ do
     esac
 done
 
-#config=`/tmp/XSB-26-01-06-15_26_00/build/config.guess`
-#dir=/tmp/XSB-26-01-06-15_26_00/config/`/tmp/XSB-26-01-06-15_26_00/build/config.sub $config`${suffix}
+#config=`/tmp/XSB-26-01-06-15_36_23/build/config.guess`
+#dir=/tmp/XSB-26-01-06-15_36_23/config/`/tmp/XSB-26-01-06-15_36_23/build/config.sub $config`${suffix}
 config=`./config.guess`
-#dir=/tmp/XSB-26-01-06-15_26_00/config/`./config.sub $config`${suffix}
+#dir=/tmp/XSB-26-01-06-15_36_23/config/`./config.sub $config`${suffix}
 dir=../config/`./config.sub $config`${suffix}
 makefile=${dir}/topMakefile
 

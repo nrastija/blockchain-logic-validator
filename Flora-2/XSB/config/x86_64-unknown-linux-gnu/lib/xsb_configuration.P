@@ -1,5 +1,5 @@
 %%
-%%  /tmp/XSB-26-01-06-15_26_00/config/x86_64-unknown-linux-gnu/lib/xsb_configuration.P.  Generated from xsb_configuration.in by configure.
+%%  /tmp/XSB-26-01-06-15_36_23/config/x86_64-unknown-linux-gnu/lib/xsb_configuration.P.  Generated from xsb_configuration.in by configure.
 
 /* File:      xsb_configuration.in  
 ** Author(s): kifer
@@ -99,7 +99,7 @@ xsb_configuration(install_dir, InstallDir) :-
 xsb_configuration(user_home, Home) :-
     	 stat_flag(47, Home1), intern_string(Home1, Home).
 
-xsb_configuration(srcdir, '/tmp/XSB-26-01-06-15_26_00').
+xsb_configuration(srcdir, '/tmp/XSB-26-01-06-15_36_23').
 
 /* Where XSB scripts are residing */
 xsb_configuration(scriptdir, ScriptDir) :-
@@ -158,7 +158,7 @@ xsb_configuration(config_libdir, ConfigLibdir) :-
 xsb_configuration(itkwish_path, '@itkwith_path@').
 
 /* site-specific directories */
-xsb_configuration(site_dir, '/tmp/XSB-26-01-06-15_26_00/site').
+xsb_configuration(site_dir, '/tmp/XSB-26-01-06-15_36_23/site').
 xsb_configuration(site_libdir, SiteLibdir) :-
      xsb_configuration(site_dir, SiteDir),
      slash(Slash),
