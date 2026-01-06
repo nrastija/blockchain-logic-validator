@@ -1,0 +1,2 @@
+FLORADIR="'/home/niko/Projects/Flora-2/blockchain-logic-validator/Flora-2/flora2'"
+PROLOG="/home/niko/Projects/Flora-2/blockchain-logic-validator/Flora-2/XSB/bin/xsb"

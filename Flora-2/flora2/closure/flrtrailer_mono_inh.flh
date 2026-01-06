@@ -1,0 +1,25 @@
+:-(import(from(/(predicate_property,2),curr_sym))).
+:-( FLORA_THIS_WORKSPACE(mvd)(_h1310,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(mvd)(_h1486,_h1506,_h1526,_h1546),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1310,_h1626,'_$ctxt'(_h1384,_h1678,_h1698)),FLORA_THIS_WORKSPACE(imvd)(_h1626,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424))))).
+:-( FLORA_THIS_WORKSPACE(imvd)(_h1310,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(imvd)(_h1486,_h1506,_h1526,_h1546),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1310,_h1626,'_$ctxt'(_h1384,_h1678,_h1698)),FLORA_THIS_WORKSPACE(imvd)(_h1626,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424))))).
+:-( FLORA_THIS_WORKSPACE(mvddef)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(mvddef)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1310,_h1586,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(imvddef)(_h1586,_h1330,'_$ctxt'(_h1364,_h1384,_h1404))))).
+:-( FLORA_THIS_WORKSPACE(imvddef)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(imvddef)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1310,_h1586,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(imvddef)(_h1586,_h1330,'_$ctxt'(_h1364,_h1384,_h1404))))).
+:-( FLORA_THIS_WORKSPACE(meth)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(meth)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1310,_h1586,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(imeth)(_h1586,_h1330,'_$ctxt'(_h1364,_h1384,_h1404))))).
+:-( FLORA_THIS_WORKSPACE(imeth)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(imeth)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1310,_h1586,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(imeth)(_h1586,_h1330,'_$ctxt'(_h1364,_h1384,_h1404))))).
+:-( FLORA_THIS_WORKSPACE(neg^imvd)(_h1310,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imvd)(_h1486,_h1506,_h1526,_h1546),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1608,_h1310,'_$ctxt'(_h1384,_h1678,_h1698)),FLORA_THIS_WORKSPACE(neg^mvd)(_h1608,_h1330,_h1350,'_$ctxt'(_h1384,_h1832,_h1852))))).
+:-( FLORA_THIS_WORKSPACE(neg^imvddef)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imvddef)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1568,_h1310,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(neg^mvddef)(_h1568,_h1330,'_$ctxt'(_h1364,_h1774,_h1794))))).
+:-( FLORA_THIS_WORKSPACE(neg^imvd)(_h1310,_h1330,_h1350,'_$ctxt'(_h1384,_h1404,_h1424)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imvd)(_h1486,_h1506,_h1526,_h1546),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1608,_h1310,'_$ctxt'(_h1384,_h1678,_h1698)),FLORA_THIS_WORKSPACE(neg^imvd)(_h1608,_h1330,_h1350,'_$ctxt'(_h1384,_h1832,_h1852))))).
+:-( FLORA_THIS_WORKSPACE(neg^imvddef)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imvddef)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1568,_h1310,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(neg^imvddef)(_h1568,_h1330,'_$ctxt'(_h1364,_h1774,_h1794))))).
+:-( FLORA_THIS_WORKSPACE(neg^imeth)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imeth)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(isa)(_h1568,_h1310,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(neg^meth)(_h1568,_h1330,'_$ctxt'(_h1364,_h1774,_h1794))))).
+:-( FLORA_THIS_WORKSPACE(neg^imeth)(_h1310,_h1330,'_$ctxt'(_h1364,_h1384,_h1404)),
+    ','(predicate_property(FLORA_THIS_WORKSPACE(neg^imeth)(_h1466,_h1486,_h1506),tabled),','(FLORA_THIS_WORKSPACE(inheritance^sub)(_h1568,_h1310,'_$ctxt'(_h1364,_h1638,_h1658)),FLORA_THIS_WORKSPACE(neg^imeth)(_h1568,_h1330,'_$ctxt'(_h1364,_h1774,_h1794))))).
