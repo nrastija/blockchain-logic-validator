@@ -1,0 +1,34 @@
+// Blockchain Knowledge Base
+// Author: Niko Rastija
+// Date: 06/01/2026
+
+transaction::class[
+    tx_id => string,
+    sender_address => address,
+    recipient_address => address,
+    amount => decimal,
+    timestamp => integer,
+    digital_signature => string
+].
+
+address::class[
+    id => string,
+    balance => decimal
+].
+
+block::class[
+    index => integer,
+    timestamp => integer,
+    transactions => list,
+    previous_hash => string,
+    hash => string,
+    nonce => integer
+].
+
+is_transaction(?Tx) :- ?TX:transaction.
+
+is_address(?Addr) :- ?Addr:address.
+
+is_block(?Block) :- ?Block:block.
+
+?- write('blockchain_kb.flr loaded')@\io, nl@\io.
