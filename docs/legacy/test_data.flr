@@ -7,27 +7,27 @@
 marko:address[
     id -> 'marko',
     balance -> 1000.0
-]
+].
 
 janica:address[
     id -> 'janica',
     balance -> 500.0
-]
+].
 
 niko:address[
     id -> 'niko',
     balance -> 750.0
-]
+].
 
 elizabeta:address[
     id -> 'elizabeta',
     balance -> 0.0
-]
+].
 
 james:address[
     id -> 'james',
     balance -> 250.0
-]
+].
 
 coinbase:address[
     id -> 'coinbase',
@@ -46,7 +46,7 @@ tx1:transaction[
     amount -> 50.0,
     timestamp -> 1767779951, //Current time converted
     digital_signature -> 'sig_marko_tx1'
-]
+].
 
 //TX2: Niko sends 300 to James
 tx2:transaction[
@@ -56,7 +56,7 @@ tx2:transaction[
     amount -> 300.0,
     timestamp -> 1767780172,
     digital_signature -> 'sig_niko_tx2'
-]
+].
 
 //TX8: James sends 100 to Marko
 tx8:transaction[
@@ -66,7 +66,7 @@ tx8:transaction[
     amount -> 100.0,
     timestamp -> 1767780413,
     digital_signature -> 'sig_james_tx8'
-]
+].
 
 // Invalid transactions
 
@@ -78,7 +78,7 @@ tx3:transaction[
     amount -> 500.0,
     timestamp -> 1767780626,
     digital_signature -> 'sig_elizabeta_tx3'
-]
+].
 
 //TX4: Marko sends -50 to James [INVALID: negative amount]
 tx4:transaction[
@@ -88,37 +88,37 @@ tx4:transaction[
     amount -> -50.0,
     timestamp -> 1767787835,
     digital_signature -> 'sig_marko_tx4'
-]
+].
 
 //TX5: Janica sends 30 to herself [INVALID: same address]
 tx5:transaction[
-    id -> 'tx5',
+    tx_id -> 'tx5',
     sender_address -> janica,
     recipient_address -> janica,
     amount -> 30.0,
     timestamp -> 1767787919,
     digital_signature -> 'sig_janica_tx5'
-]
+].
 
 //TX6: Marko sends 40 to James with fake signature [INVALID: invalid signature]
 tx6:transaction[
-    id -> 'tx6'
+    tx_id -> 'tx6',
     sender_address -> marko,
     recipient_address -> james,
     amount -> 40.0,
     timestamp -> 1767788020,
     digital_signature -> 'fake_signature'
-]
+].
 
 //TX7: Elizabeta sends 0 to Niko [INVALID: amount is 0]
 tx7:transaction[
-    id -> 'tx7',
+    tx_id -> 'tx7',
     sender_address -> elizabeta,
     recipient_address -> niko,
     amount -> 0.0,
     timestamp -> 1767788113,
     digital_signature -> 'sig_elizabeta_tx7'
-]
+].
 
 // Blocks
 
@@ -130,7 +130,7 @@ genesis_block:block[
     previous_hash -> '0',
     hash -> 'genesis_hash_00000',
     nonce -> 0
-]
+].
 
 // Block 1 [tx1 & tx2]
 block1:block[
@@ -140,7 +140,7 @@ block1:block[
     previous_hash -> 'genesis_hash_00000',
     hash -> 'block1_hash_00000',
     nonce -> 12345
-]
+].
 
 // Block 2 [tx7]
 block2:block[
@@ -150,7 +150,7 @@ block2:block[
     previous_hash -> 'block1_hash_00000',
     hash -> 'block2_hash_00000',
     nonce -> 23456
-]
+].
 
 // Test data stats
 
@@ -165,3 +165,5 @@ data_stats :-
     write('  Addresses: ')@\io, write(?AddrCount)@\io, nl@\io,
     write('  Transactions: ')@\io, write(?TxCount)@\io, nl@\io,
     write('  Blocks: ')@\io, write(?BlockCount)@\io, nl@\io.
+
+    ?- write('test_data.flr loaded')@\io, nl@\io.

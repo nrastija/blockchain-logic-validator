@@ -1,0 +1,103 @@
+// Validation rules
+// Author: Niko Rastija
+// Date: 07/01/2026
+
+// Rule 1: Amount must be positive
+positive_amount(?Tx) :-
+    ?Tx:transaction[amount -> ?Amount],
+    ?Amount > 0.
+
+// Rule 2: Sender and recipient must be different
+different_addresses(?Tx) :-
+    ?Tx:transaction[sender_address -> ?Sender, recipient_address -> ?Recipient],
+    ?Sender !== ?Recipient.
+
+// Rule 3: Sender needs to have sufficient balance
+sufficient_balance(?Tx) :-
+    ?Tx:transaction[sender_address -> ?SenderAddr, amount -> ?Amount],
+    ?SenderAddr:address[balance -> ?Balance],
+    ?Balance >= ?Amount.
+
+// Rule 4: Signature must be valid
+valid_signature(?Tx) :-
+    ?Tx:transaction[sender_address -> ?SenderAddr, digital_signature -> ?Sig],
+    ?SenderAddr:address[id -> ?SenderId],
+    atom_concat('sig_', ?SenderId, ?Prefix)@\plg,
+    sub_atom(?Sig, 0, _, _, ?Prefix)@\plg.
+
+// Rule 5: Transaction must not be double-spent
+not_double_spent(?Tx) :-
+    ?Tx:transaction[tx_id -> ?TxID],
+    \naf spent_transaction(?TxID).
+
+spent_transaction(?TxID) :-
+    ?Block:block[transactions -> ?TxList],
+    member(?Tx, ?TxList)@\plg,
+    ?Tx:transaction[tx_id -> ?TxID].
+
+// Main validation rule
+valid_transaction(?Tx) :-
+    positive_amount(?Tx),
+    different_addresses(?Tx),
+    sufficient_balance(?Tx),
+    valid_signature(?Tx),
+    not_double_spent(?Tx).
+
+// Diagnostics
+diagnose_transaction(?Tx, insufficient_funds) :-
+    \naf sufficient_balance(?Tx),
+    !.
+
+diagnose_transaction(?Tx, negative_or_zero_amount) :-
+    \naf positive_amount(?Tx),
+    !.
+
+diagnose_transaction(?Tx, same_sender_receiver) :-
+    \naf different_addresses(?Tx),
+    !.
+
+diagnose_transaction(?Tx, invalid_signature) :-
+    \naf valid_signature(?Tx),
+    !.
+
+diagnose_transaction(?Tx, double_spending) :-
+    \naf not_double_spent(?Tx),
+    !.
+
+diagnose_transaction(?Tx, valid) :-
+    valid_transaction(?Tx),
+    !.
+
+diagnose_transaction(_, unknown_error).
+
+// Block validation
+valid_block_transactions(?Block) :-
+    ?Block:block[transactions -> ?TxList],
+    forall(member(?Tx, ?TxList)@\plg, valid_transaction(?Tx))@\plg.
+
+// Analysis
+all_valid_transactions(?List) :-
+    setof{?Tx | valid_transaction(?Tx)}[collect(?List)]@\btp.
+
+all_invalid_transactions(?List) :-
+    setof{?Tx | ?Tx:transaction, \naf valid_transaction(?Tx)}[collect(?List)]@\btp.
+
+network_health(?Total, ?Valid, ?Invalid, ?HealthScore) :-
+    findall(?Tx, ?Tx:transaction, ?AllTx),
+    length(?AllTx, ?Total)@\plg,
+    findall(?Tx, valid_transaction(?Tx), ?ValidTx),
+    length(?ValidTx, ?Valid)@\plg,
+    ?Invalid \is ?Total - ?Valid,
+    ?HealthScore \is (?Valid * 100) / ?Total.
+
+suspicious_transaction(?Tx, large_amount) :-
+    ?Tx:transaction[amount -> ?Amount],
+    ?Amount > 500.
+
+suspicious_transaction(?Tx, round_number) :-
+    ?Tx:transaction[amount -> ?Amount],
+    ?Amount > 0,
+    ?Remainder \is ?Amount mod 100,
+    ?Remainder = 0.
+
+?- write('rules.flr loaded')@\io, nl@\io.

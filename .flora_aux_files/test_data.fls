@@ -1,0 +1,53 @@
+flora_symbol(sig_marko_tx4,0,\@,389,90,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sender_address,0,\@,156,44,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx5,0,\@,394,94,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(marko,0,\@,19,7,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(janica,0,\@,39,12,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(genesis_hash_00000,0,\@,581,131,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(james,0,\@,99,27,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol('  Blocks: ',0,\@,835,167,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(block,0,\@,545,126,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_janica_tx5,0,\@,438,100,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(block1_hash_00000,0,\@,635,141,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx6,0,\@,443,104,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(fake_signature,0,\@,487,110,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_james_tx8,0,\@,288,68,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(address,0,\@,21,7,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx7,0,\@,492,114,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(genesis_block,0,\@,543,126,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(findall,3,\@,703,158,predicate_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx2,0,\@,195,52,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx_id,0,\@,149,43,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(coinbase,0,\@,119,32,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(transactions,0,\@,562,129,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol('  Addresses: ',0,\@,793,165,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(index,0,\@,548,127,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(recipient_address,0,\@,163,45,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(write,1,'\\io',778,164,predicate_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(data_stats,0,\@,699,157,predicate_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(previous_hash,0,\@,570,130,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(transaction,0,\@,146,42,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(elizabeta,0,\@,79,22,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol('Test Data Statistics:',0,\@,780,164,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(hash,0,\@,577,131,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(timestamp,0,\@,177,47,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(balance,0,\@,31,9,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(nonce,0,\@,584,132,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_marko_tx1,0,\@,190,48,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(block1,0,\@,593,136,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_niko_tx2,0,\@,239,58,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(niko,0,\@,59,17,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol('  Transactions: ',0,\@,814,166,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol('0',0,\@,574,130,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(id,0,\@,24,8,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(nl,0,'\\io',786,164,predicate_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(block2,0,\@,647,146,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(digital_signature,0,\@,186,48,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_elizabeta_tx3,0,\@,339,80,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx3,0,\@,295,74,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(block2_hash_00000,0,\@,686,151,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx8,0,\@,244,62,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx1,0,\@,144,42,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(sig_elizabeta_tx7,0,\@,536,120,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(tx4,0,\@,344,84,function_symbol,nontransactional_symbol,'test_data.flr').
+flora_symbol(amount,0,\@,170,46,function_symbol,nontransactional_symbol,'test_data.flr').

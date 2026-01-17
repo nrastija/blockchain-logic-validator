@@ -1,0 +1,21 @@
+%% #include info for source file: /workspace/queries.flr
+
+
+:-(multifile(/('_$_$_flora''include_prj_info',2))).
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/flrincludes/flora_terms.flh','/opt/flora2/flora2/flrincludes/flora_var_attributes.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/flrincludes/flora_terms.flh','/opt/flora2/flora2/flrincludes/flora_datatype_symbols.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/flrincludes/flora_terms.flh','/opt/flora2/flora2/flrincludes/flora_prefix.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/flrincludes/flora_terms.flh','/opt/flora2/XSB/prolog_includes/standard.h').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/flrincludes/flora_terms.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/flrincludes/flora_prefix.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_iri.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_signatures.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/XSB/prolog_includes/standard.h').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_double.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_string.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_currency.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/flrincludes/flora_var_attributes.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/flrincludes/flora_datatype_symbols.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_symbol.flh').
+'_$_$_flora''include_prj_info'('/opt/flora2/flora2/lib/flrbasetype.flr','/opt/flora2/flora2/lib/include/flrbasetype_list.flh').
+'_$_$_flora''include_prj_info'('/workspace/queries.flr',null).

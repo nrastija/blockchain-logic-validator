@@ -1,0 +1,37 @@
+flora_symbol(diagnose_transaction,2,\@,433,111,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  Invalid: ',0,\@,634,131,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  Valid: ',0,\@,613,130,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(network_health,4,\@,575,128,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  network_health(?T, ?V, ?I, ?S)',0,\@,240,83,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Tests completed',0,\@,689,135,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  Total: ',0,\@,592,129,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(help,0,\@,79,67,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  valid_block_transactions(block1)',0,\@,271,86,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  Score: ',0,\@,655,132,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  Reason: ',0,\@,444,112,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Blocks:',0,\@,258,85,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  all_valid_transactions(?List)',0,\@,227,82,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Test 3: tx4 should be invalid (negative amount)',0,\@,470,115,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Analysis:',0,\@,214,81,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(nl,0,'\\io',83,68,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('%',0,\@,671,132,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  valid_transaction(tx1)',0,\@,121,72,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Running tests...',0,\@,297,91,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  ?Tx:transaction[sender_address -> marko]',0,\@,196,79,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Available queries:',0,\@,90,69,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Transactions:',0,\@,183,78,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(write,1,'\\io',88,69,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(quick_test,0,\@,286,89,predicate_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  marko:address[balance -> ?B]',0,\@,165,76,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Test 4: Network health',0,\@,564,127,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Test 2: tx3 should be invalid (insufficient funds)',0,\@,376,103,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(tx1,0,\@,332,95,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Addresses:',0,\@,152,75,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(tx3,0,\@,395,104,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  FAIL',0,\@,354,99,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(tx4,0,\@,489,116,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  diagnose_transaction(tx3, ?Problem)',0,\@,134,73,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('  PASS',0,\@,338,96,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Test 1: tx1 should be valid',0,\@,315,94,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol('Validation:',0,\@,108,71,function_symbol,nontransactional_symbol,'queries.flr').
+flora_symbol(valid_transaction,1,\@,330,95,predicate_symbol,nontransactional_symbol,'queries.flr').

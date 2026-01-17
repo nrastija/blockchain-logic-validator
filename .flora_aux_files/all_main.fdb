@@ -1,0 +1,397 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   flora-users@lists.sourceforge.net
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2018;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_flora''mod''main''mvdsig'(transaction,tx_id,string,__newcontextvar27).
+'_$_$_flora''mod''main''mvdcondef'(transaction,tx_id,0,*,__newcontextvar28).
+'_$_$_flora''mod''main''mvdsig'(transaction,sender_address,address,__newcontextvar29).
+'_$_$_flora''mod''main''mvdcondef'(transaction,sender_address,0,*,__newcontextvar30).
+'_$_$_flora''mod''main''mvdsig'(transaction,recipient_address,address,__newcontextvar31).
+'_$_$_flora''mod''main''mvdcondef'(transaction,recipient_address,0,*,__newcontextvar32).
+'_$_$_flora''mod''main''mvdsig'(transaction,amount,decimal,__newcontextvar33).
+'_$_$_flora''mod''main''mvdcondef'(transaction,amount,0,*,__newcontextvar34).
+'_$_$_flora''mod''main''mvdsig'(transaction,timestamp,integer,__newcontextvar35).
+'_$_$_flora''mod''main''mvdcondef'(transaction,timestamp,0,*,__newcontextvar36).
+'_$_$_flora''mod''main''mvdsig'(transaction,digital_signature,string,__newcontextvar37).
+'_$_$_flora''mod''main''mvdcondef'(transaction,digital_signature,0,*,__newcontextvar38).
+'_$_$_flora''mod''main''sub'(transaction,class,__newcontextvar39).
+'_$_$_flora''mod''main''mvdsig'(address,id,string,__newcontextvar11).
+'_$_$_flora''mod''main''mvdcondef'(address,id,0,*,__newcontextvar12).
+'_$_$_flora''mod''main''mvdsig'(address,balance,decimal,__newcontextvar13).
+'_$_$_flora''mod''main''mvdcondef'(address,balance,0,*,__newcontextvar14).
+'_$_$_flora''mod''main''sub'(address,class,__newcontextvar15).
+'_$_$_flora''mod''main''mvdsig'(block,index,integer,__newcontextvar27).
+'_$_$_flora''mod''main''mvdcondef'(block,index,0,*,__newcontextvar28).
+'_$_$_flora''mod''main''mvdsig'(block,timestamp,integer,__newcontextvar29).
+'_$_$_flora''mod''main''mvdcondef'(block,timestamp,0,*,__newcontextvar30).
+'_$_$_flora''mod''main''mvdsig'(block,transactions,list,__newcontextvar31).
+'_$_$_flora''mod''main''mvdcondef'(block,transactions,0,*,__newcontextvar32).
+'_$_$_flora''mod''main''mvdsig'(block,previous_hash,string,__newcontextvar33).
+'_$_$_flora''mod''main''mvdcondef'(block,previous_hash,0,*,__newcontextvar34).
+'_$_$_flora''mod''main''mvdsig'(block,hash,string,__newcontextvar35).
+'_$_$_flora''mod''main''mvdcondef'(block,hash,0,*,__newcontextvar36).
+'_$_$_flora''mod''main''mvdsig'(block,nonce,integer,__newcontextvar37).
+'_$_$_flora''mod''main''mvdcondef'(block,nonce,0,*,__newcontextvar38).
+'_$_$_flora''mod''main''sub'(block,class,__newcontextvar39).
+'_$_$_flora''mod''main''mvd'(marko,id,marko,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(marko,balance,1000.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(marko,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(janica,id,janica,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(janica,balance,500.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(janica,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(niko,id,niko,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(niko,balance,750.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(niko,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(elizabeta,id,elizabeta,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(elizabeta,balance,0.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(elizabeta,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(james,id,james,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(james,balance,250.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(james,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(coinbase,id,coinbase,__newcontextvar7).
+'_$_$_flora''mod''main''mvd'(coinbase,balance,999999.0,__newcontextvar8).
+'_$_$_flora''mod''main''isa'(coinbase,address,__newcontextvar9).
+'_$_$_flora''mod''main''mvd'(tx1,tx_id,tx1,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx1,sender_address,marko,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx1,recipient_address,janica,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx1,amount,50.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx1,timestamp,1767779951,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx1,digital_signature,sig_marko_tx1,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx1,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx2,tx_id,tx2,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx2,sender_address,niko,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx2,recipient_address,james,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx2,amount,300.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx2,timestamp,1767780172,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx2,digital_signature,sig_niko_tx2,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx2,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx8,tx_id,tx8,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx8,sender_address,james,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx8,recipient_address,marko,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx8,amount,100.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx8,timestamp,1767780413,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx8,digital_signature,sig_james_tx8,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx8,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx3,tx_id,tx3,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx3,sender_address,elizabeta,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx3,recipient_address,niko,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx3,amount,500.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx3,timestamp,1767780626,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx3,digital_signature,sig_elizabeta_tx3,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx3,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx4,tx_id,tx4,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx4,sender_address,marko,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx4,recipient_address,james,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx4,amount,-50.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx4,timestamp,1767787835,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx4,digital_signature,sig_marko_tx4,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx4,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx5,tx_id,tx5,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx5,sender_address,janica,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx5,recipient_address,janica,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx5,amount,30.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx5,timestamp,1767787919,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx5,digital_signature,sig_janica_tx5,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx5,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx6,tx_id,tx6,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx6,sender_address,marko,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx6,recipient_address,james,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx6,amount,40.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx6,timestamp,1767788020,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx6,digital_signature,fake_signature,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx6,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(tx7,tx_id,tx7,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(tx7,sender_address,elizabeta,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(tx7,recipient_address,niko,__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(tx7,amount,0.0,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(tx7,timestamp,1767788113,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(tx7,digital_signature,sig_elizabeta_tx7,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(tx7,transaction,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(genesis_block,index,0,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(genesis_block,timestamp,1767788222,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(genesis_block,transactions,[],__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(genesis_block,previous_hash,'0',__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(genesis_block,hash,genesis_hash_00000,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(genesis_block,nonce,0,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(genesis_block,block,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(block1,index,1,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(block1,timestamp,1767788322,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(block1,transactions,[tx1,tx2],__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(block1,previous_hash,genesis_hash_00000,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(block1,hash,block1_hash_00000,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(block1,nonce,12345,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(block1,block,__newcontextvar21).
+'_$_$_flora''mod''main''mvd'(block2,index,2,__newcontextvar15).
+'_$_$_flora''mod''main''mvd'(block2,timestamp,1767788396,__newcontextvar16).
+'_$_$_flora''mod''main''mvd'(block2,transactions,[tx7],__newcontextvar17).
+'_$_$_flora''mod''main''mvd'(block2,previous_hash,block1_hash_00000,__newcontextvar18).
+'_$_$_flora''mod''main''mvd'(block2,hash,block2_hash_00000,__newcontextvar19).
+'_$_$_flora''mod''main''mvd'(block2,nonce,23456,__newcontextvar20).
+'_$_$_flora''mod''main''isa'(block2,block,__newcontextvar21).
+'_$_$_flora''mod''main''tblflapply'(diagnose_transaction,'_',unknown_error,__newcontextvar3).

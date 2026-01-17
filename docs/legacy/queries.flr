@@ -1,0 +1,142 @@
+// Example queries
+// Author: Niko Rastija
+// Date: 07/01/2026
+
+// Basic validation queries
+// Check if transaction is valid
+// ?- valid_transaction(tx1).
+// ?- valid_transaction(tx3).
+
+// Diagnose why transaction failed
+// ?- diagnose_transaction(tx3, ?Problem).
+// ?- diagnose_transaction(tx4, ?Problem).
+
+// Address queries
+// Get balance for specific address
+// ?- marko:address[balance -> ?B].
+// ?- janica:address[balance -> ?B].
+
+// Find all addresses with balance above threshold
+// ?- ?Addr:address[balance -> ?B], ?B > 500.
+
+// Transaction queries
+// Find all transactions from specific sender
+// ?- ?Tx:transaction[sender_address -> marko].
+
+// Find all transactions to specific recipient
+// ?- ?Tx:transaction[recipient_address -> james].
+
+// Find transactions above certain amount
+// ?- ?Tx:transaction[amount -> ?A], ?A > 100.
+
+// Validation rule queries
+// Test individual validation rules
+// ?- positive_amount(tx1).
+// ?- positive_amount(tx4).
+// ?- sufficient_balance(tx3).
+// ?- different_addresses(tx5).
+// ?- valid_signature(tx6).
+
+// Analysis queries
+// Get list of all valid transactions
+// ?- all_valid_transactions(?List).
+
+// Get list of all invalid transactions
+// ?- all_invalid_transactions(?List).
+
+// Get network health metrics
+// ?- network_health(?Total, ?Valid, ?Invalid, ?Score).
+
+// Find suspicious transactions
+// ?- suspicious_transaction(?Tx, ?Reason).
+
+// Block queries
+// Get transactions in specific block
+// ?- block1:block[transactions -> ?TxList].
+
+// Check if all transactions in block are valid
+// ?- valid_block_transactions(block1).
+// ?- valid_block_transactions(block2).
+
+// Get block hash
+// ?- genesis_block:block[hash -> ?Hash].
+
+// Data statistics
+// ?- data_stats.
+
+help :-
+    nl@\io,
+    write('Available queries:')@\io, nl@\io,
+    nl@\io,
+    write('Validation:')@\io, nl@\io,
+    write('  valid_transaction(tx1)')@\io, nl@\io,
+    write('  diagnose_transaction(tx3, ?Problem)')@\io, nl@\io,
+    nl@\io,
+    write('Addresses:')@\io, nl@\io,
+    write('  marko:address[balance -> ?B]')@\io, nl@\io,
+    nl@\io,
+    write('Transactions:')@\io, nl@\io,
+    write('  ?Tx:transaction[sender_address -> marko]')@\io, nl@\io,
+    nl@\io,
+    write('Analysis:')@\io, nl@\io,
+    write('  all_valid_transactions(?List)')@\io, nl@\io,
+    write('  network_health(?T, ?V, ?I, ?S)')@\io, nl@\io,
+    nl@\io,
+    write('Blocks:')@\io, nl@\io,
+    write('  valid_block_transactions(block1)')@\io, nl@\io,
+    nl@\io.
+
+quick_test :-
+    nl@\io,
+    write('Running tests...')@\io, nl@\io,
+    nl@\io,
+
+    write('Test 1: tx1 should be valid')@\io, nl@\io,
+    ( ( valid_transaction(tx1),
+        write('  PASS')@\io, !
+      )
+      ;
+      ( write('  FAIL')@\io )
+    ),
+    nl@\io, nl@\io,
+
+    write('Test 2: tx3 should be invalid (insufficient funds)')@\io, nl@\io,
+    ( ( \naf(valid_transaction(tx3)),
+        write('  PASS')@\io, !
+      )
+      ;
+      ( write('  FAIL')@\io )
+    ),
+    nl@\io,
+    diagnose_transaction(tx3, ?Problem3),
+    write('  Reason: ')@\io, write(?Problem3)@\io, nl@\io,
+    nl@\io,
+
+    write('Test 3: tx4 should be invalid (negative amount)')@\io, nl@\io,
+    ( ( \naf(valid_transaction(tx4)),
+        write('  PASS')@\io, !
+      )
+      ;
+      ( write('  FAIL')@\io )
+    ),
+    nl@\io,
+    diagnose_transaction(tx4, ?Problem4),
+    write('  Reason: ')@\io, write(?Problem4)@\io, nl@\io,
+    nl@\io,
+
+    write('Test 4: Network health')@\io, nl@\io,
+    network_health(?Total, ?Valid, ?Invalid, ?Score),
+    write('  Total: ')@\io, write(?Total)@\io, nl@\io,
+    write('  Valid: ')@\io, write(?Valid)@\io, nl@\io,
+    write('  Invalid: ')@\io, write(?Invalid)@\io, nl@\io,
+    write('  Score: ')@\io, write(?Score)@\io, write('%')@\io, nl@\io,
+    nl@\io,
+
+    write('Tests completed')@\io, nl@\io,
+    nl@\io.
+
+// Nakon učitavanja pokreni ručno:
+//   ?- help.
+//   ?- quick_test.
+
+?- write('queries.flr loaded')@\io, nl@\io.

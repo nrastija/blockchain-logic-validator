@@ -1,0 +1,5 @@
+%% #include info for source file: /workspace/blockchain_kb.flr
+
+
+:-(multifile(/('_$_$_flora''include_prj_info',2))).
+'_$_$_flora''include_prj_info'('/workspace/blockchain_kb.flr',null).

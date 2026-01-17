@@ -1,0 +1,27 @@
+flora_symbol(address,0,\@,33,7,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(recipient_address,0,\@,36,8,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(amount,0,\@,43,9,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(list,0,\@,108,22,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(block,0,\@,85,19,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(decimal,0,\@,47,9,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(is_block,1,\@,155,32,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(timestamp,0,\@,50,10,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(string,0,\@,26,6,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(digital_signature,0,\@,57,11,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(nl,0,'\\io',176,34,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(transactions,0,\@,104,22,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(is_address,1,\@,144,30,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(previous_hash,0,\@,111,23,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(index,0,\@,90,20,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(integer,0,\@,54,10,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(write,1,'\\io',168,34,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(hash,0,\@,118,24,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('blockchain_kb.flr loaded',0,\@,170,34,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(nonce,0,\@,125,25,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(transaction,0,\@,17,5,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(id,0,\@,70,15,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(balance,0,\@,77,16,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(class,0,\@,19,5,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(is_transaction,1,\@,133,28,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx_id,0,\@,22,6,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sender_address,0,\@,29,7,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
