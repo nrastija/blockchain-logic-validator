@@ -121,6 +121,12 @@ Učitavanje cjelokupne baze znanja u Flora-2 okruženje.
 ?- [blockchain_kb].
 ```
 
+Ako ste pak u Floru-2 pokrenuli drugom folderu, potrebno je pozicionirati se na sljedeći način:
+```prolog
+?-  ['_putanja_/blockchain-logic-validator/blockchain_kb.flr'].
+```
+**Važno je ne izostaviti jednostruke navodnike ' ' !**
+
 ### Dobivanje uputa korištenja sustava
 Korisnik može dobiti objašnjenje upute svih naredbi u sustavu koje su implementirane sljedećom naredbom.
 
