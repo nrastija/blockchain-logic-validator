@@ -1,126 +1,130 @@
-flora_symbol(block2,0,\@,742,139,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(diagnose_transaction,2,\@,1219,217,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(valid,0,\@,1304,233,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Provjerava je li transakcija tx1 valjana prema osnovnim pravilima.',0,\@,1839,311,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(block2_hash_00000,0,\@,781,144,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(valid_from_list,2,\@,1523,272,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Blokovi:',0,\@,2058,341,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(length_list,2,\@,862,157,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(insufficient_funds,0,\@,1224,217,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol('  network_health(?T, ?V, ?I, ?S).',0,\@,2032,337,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(marko,0,\@,144,39,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx4,0,\@,446,84,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(calculate_score,3,\@,1448,261,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  valid_transaction(tx1).',0,\@,1831,310,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_marko_tx4,0,\@,491,90,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Provjerava postoji li rizik dvostrukog trošenja za transakciju tx1.',0,\@,2019,335,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx5,0,\@,495,93,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(james,0,\@,216,43,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Provjera valjanosti:',0,\@,1818,309,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_janica_tx5,0,\@,539,99,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Izračunava ukupno stanje mreže (ukupno, valjane, nevaljane transakcije i postotak ispravnosti).',0,\@,2040,338,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Dostupne naredbe:',0,\@,1800,306,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(same_sender_receiver,0,\@,1264,225,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Vraća popis svih nevaljanih transakcija u sustavu.',0,\@,1998,332,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(integer,0,\@,60,16,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Transakcije u bazi: ',0,\@,1767,298,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(genesis_block,0,\@,640,121,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(not_double_spent,1,\@,1087,190,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(data_stats,0,\@,1708,294,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  all_invalid_transactions(?List).',0,\@,1990,331,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(timestamp,0,\@,56,16,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx8,0,\@,349,65,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(genesis_hash_00000,0,\@,678,126,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(digital_signature,0,\@,63,17,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(coinbase,0,\@,234,44,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_james_tx8,0,\@,393,71,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(spent_transaction,1,\@,1108,192,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(all_valid_transactions,1,\@,1510,270,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Vraća popis svih valjanih transakcija u sustavu.',0,\@,1977,329,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(all_transactions,1,\@,792,148,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Adrese u bazi: ',0,\@,1746,297,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(unknown_error,0,\@,1322,237,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  all_valid_transactions(?List).',0,\@,1969,328,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(class,0,\@,25,11,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(invalid_from_list,2,\@,1622,284,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(id,0,\@,76,21,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(positive_amount,1,\@,911,167,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(different_addresses,1,\@,937,172,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  data_stats.',0,\@,2110,347,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(id,0,\@,76,21,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx_id,0,\@,28,12,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Statistika:',0,\@,2097,346,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Analiza:',0,\@,1956,327,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(balance,0,\@,83,22,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx6,0,\@,543,102,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sender_address,0,\@,35,13,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(invalid_from_list,2,\@,1622,284,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  Invalid: ',0,\@,2481,388,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Provjerava jesu li sve transakcije unutar bloka block1 valjane.',0,\@,2079,343,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Ispisuje sve transakcije koje je poslala adresa marko.',0,\@,1938,324,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx1,0,\@,253,47,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(fake_signature,0,\@,587,108,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(quick_test,0,\@,2133,352,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(address,0,\@,39,13,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_janica_tx5,0,\@,539,99,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(genesis_block,0,\@,640,121,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(valid_transaction,1,\@,1203,210,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  Valid: ',0,\@,2460,387,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(nl,0,'\\io',1760,297,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_marko_tx1,0,\@,297,53,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(amount,0,\@,49,15,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(janica,0,\@,162,40,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  Total: ',0,\@,2439,386,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(string,0,\@,32,12,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(list,0,\@,114,28,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(block1,0,\@,689,130,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  ?Tx:transaction[sender_address -> marko].',0,\@,1930,323,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(decimal,0,\@,53,15,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Test 4: Network health',0,\@,2411,384,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  valid_block_transactions(block1).',0,\@,2071,342,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(block1_hash_00000,0,\@,731,135,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(invalid_signature,0,\@,1284,229,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('%',0,\@,2518,389,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  Reason: ',0,\@,2291,371,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Transakcije:',0,\@,1917,322,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(member_list,2,\@,824,154,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  valid_transaction(tx1).',0,\@,1831,310,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(genesis_hash_00000,0,\@,678,126,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Provjerava postoji li rizik dvostrukog trošenja za transakciju tx1.',0,\@,2019,335,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(valid,0,\@,1304,233,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(block,0,\@,91,25,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx3,0,\@,398,75,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('0',0,\@,671,125,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Tests completed',0,\@,2536,392,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  FAIL',0,\@,2201,360,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Dohvaća trenutno stanje (balance) adrese marko.',0,\@,1899,319,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(transaction,0,\@,23,11,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(valid_signature,1,\@,1015,183,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(index,0,\@,96,26,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_elizabeta_tx3,0,\@,442,81,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(all_invalid_transactions,1,\@,1609,282,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  Score: ',0,\@,2502,389,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  PASS',0,\@,2185,358,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('_',0,\@,1319,237,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(write,1,'\\io',1744,297,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(valid_block_transactions,1,\@,1329,243,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Test 3: tx4 should be invalid (negative amount)',0,\@,2317,374,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_niko_tx2,0,\@,345,62,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx6,0,\@,543,102,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Provjera valjanosti:',0,\@,1818,309,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(invalid_signature,0,\@,1284,229,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(nonce,0,\@,131,31,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx3,0,\@,398,75,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_marko_tx1,0,\@,297,53,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx8,0,\@,349,65,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(member_list,2,\@,824,154,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Dostupne naredbe:',0,\@,1800,306,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(niko,0,\@,180,41,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  marko:address[balance -> ?B].',0,\@,1891,318,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Vraća popis svih nevaljanih transakcija u sustavu.',0,\@,1998,332,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(fake_signature,0,\@,587,108,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(class,0,\@,25,11,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(block2_hash_00000,0,\@,781,144,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(all_invalid_transactions,1,\@,1609,282,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  all_invalid_transactions(?List).',0,\@,1990,331,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(valid_block_transactions,1,\@,1329,243,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(integer,0,\@,60,16,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(all_valid_transactions,1,\@,1510,270,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(decimal,0,\@,53,15,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(transactions,0,\@,110,28,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(coinbase,0,\@,234,44,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(double_spend_risk,1,\@,1152,199,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(negative_or_zero_amount,0,\@,1244,221,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Test 2: tx3 should be invalid (insufficient funds)',0,\@,2223,364,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Adrese:',0,\@,1878,317,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(valid_signature,1,\@,1015,183,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Vraća popis svih valjanih transakcija u sustavu.',0,\@,1977,329,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(all_valid_in_list,1,\@,1348,245,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(transactions,0,\@,110,28,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('   - Objašnjava zasto transakcija tx3 nije valjana (ili je valjana).',0,\@,1860,314,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(is_valid_transaction,1,\@,1168,203,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol('  double_spend_risk(tx1).',0,\@,2011,334,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(previous_hash,0,\@,117,29,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx7,0,\@,591,111,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sufficient_balance,1,\@,970,177,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Test 1: tx1 should be valid',0,\@,2162,357,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(hash,0,\@,124,30,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_elizabeta_tx7,0,\@,635,117,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(network_health,4,\@,1388,257,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(is_valid_transaction,1,\@,1168,203,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(timestamp,0,\@,56,16,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  all_valid_transactions(?List).',0,\@,1969,328,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(marko,0,\@,144,39,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(help,0,\@,1789,304,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(tx2,0,\@,301,56,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(recipient_address,0,\@,42,14,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(nonce,0,\@,131,31,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('Running tests...',0,\@,2144,354,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(network_health,4,\@,1388,257,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(block1,0,\@,689,130,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol('   - Ispisuje osnovnu statistiku o adresama i transakcijama u bazi znanja.',0,\@,2118,348,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol('  diagnose_transaction(tx3, ?Problem).',0,\@,1852,313,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Testiranje završeno.',0,\@,2586,399,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Analiza:',0,\@,1956,327,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sufficient_balance,1,\@,970,177,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Ispisuje sve transakcije koje je poslala adresa marko.',0,\@,1938,324,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  Postotak ispravnosti: ',0,\@,2552,396,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(quick_test,0,\@,2185,359,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(diagnose_transaction,2,\@,1219,217,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
 flora_symbol(elizabeta,0,\@,198,42,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
-flora_symbol(sig_niko_tx2,0,\@,345,62,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx4,0,\@,446,84,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Ukupno testiranje sustava:',0,\@,2136,351,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  data_stats.',0,\@,2110,347,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  Valjane: ',0,\@,2510,394,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(insufficient_funds,0,\@,1224,217,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Statistika:',0,\@,2097,346,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  ?Tx:transaction[sender_address -> marko].',0,\@,1930,323,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(list,0,\@,114,28,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  Ukupno transakcija: ',0,\@,2489,393,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_marko_tx4,0,\@,491,90,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(calculate_score,3,\@,1448,261,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(not_double_spent,1,\@,1087,190,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(recipient_address,0,\@,42,14,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(length_list,2,\@,862,157,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Test 4: Stanje mreže',0,\@,2461,391,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Transakcije:',0,\@,1917,322,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(string,0,\@,32,12,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(james,0,\@,216,43,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Izračunava ukupno stanje mreže (ukupno, valjane, nevaljane transakcije i postotak ispravnosti).',0,\@,2040,338,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Dohvaća trenutno stanje (balance) adrese marko.',0,\@,1899,319,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(previous_hash,0,\@,117,29,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(janica,0,\@,162,40,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  Razlog: ',0,\@,2342,378,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(nl,0,'\\io',1760,297,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(spent_transaction,1,\@,1108,192,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(block2,0,\@,742,139,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  Nevaljane: ',0,\@,2531,395,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  PAD',0,\@,2253,367,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('     Testovi ukljucuju provjeru valjanih i nevaljanih transakcija te stanje mreže.',0,\@,2170,354,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  quick_test.',0,\@,2149,352,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(same_sender_receiver,0,\@,1264,225,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx7,0,\@,591,111,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  PROLAZ',0,\@,2237,365,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  marko:address[balance -> ?B].',0,\@,1891,318,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx_id,0,\@,28,12,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('%',0,\@,2568,396,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Transakcije u bazi: ',0,\@,1767,298,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(unknown_error,0,\@,1322,237,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(index,0,\@,96,26,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Test 3: tx4 treba biti nevaljana (negativan iznos)',0,\@,2368,381,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(write,1,'\\io',1744,297,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sender_address,0,\@,35,13,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx5,0,\@,495,93,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Adrese:',0,\@,1878,317,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx2,0,\@,301,56,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(data_stats,0,\@,1708,294,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(address,0,\@,39,13,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_elizabeta_tx3,0,\@,442,81,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_elizabeta_tx7,0,\@,635,117,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Objašnjava zasto transakcija tx3 nije valjana (ili je valjana).',0,\@,1860,314,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(hash,0,\@,124,30,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Provjerava jesu li sve transakcije unutar bloka block1 valjane.',0,\@,2079,343,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(amount,0,\@,49,15,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(block1_hash_00000,0,\@,731,135,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Test 2: tx3 treba biti nevaljana (nedovoljna sredstva)',0,\@,2275,371,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('_',0,\@,1319,237,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(all_transactions,1,\@,792,148,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Adrese u bazi: ',0,\@,1746,297,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(sig_james_tx8,0,\@,393,71,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('0',0,\@,671,125,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  diagnose_transaction(tx3, ?Problem).',0,\@,1852,313,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Test 1: tx1 treba biti valjana',0,\@,2214,364,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('  valid_block_transactions(block1).',0,\@,2071,342,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(digital_signature,0,\@,63,17,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(valid_from_list,2,\@,1523,272,predicate_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(balance,0,\@,83,22,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Pokretanje testova...',0,\@,2196,361,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Provjerava je li transakcija tx1 valjana prema osnovnim pravilima.',0,\@,1839,311,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol(tx1,0,\@,253,47,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('Blokovi:',0,\@,2058,341,function_symbol,nontransactional_symbol,'blockchain_kb.flr').
+flora_symbol('   - Pokrece skup unaprijed definiranih testova za provjeru ispravnosti sustava.',0,\@,2157,353,function_symbol,nontransactional_symbol,'blockchain_kb.flr').

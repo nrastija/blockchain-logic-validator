@@ -1,5 +1,5 @@
 #include "flrheader.flh"
-#define FLORA_COMPILATION_ID 1
+#define FLORA_COMPILATION_ID 6
 
 
 '_$_$_flora''prop_descriptor'(4,'blockchain_kb.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').

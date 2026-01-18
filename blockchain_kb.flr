@@ -346,49 +346,55 @@ nl@\io,
 write('Statistika:')@\io, nl@\io,
 write('  data_stats.')@\io,
 write('   - Ispisuje osnovnu statistiku o adresama i transakcijama u bazi znanja.')@\io, nl@\io,
+nl@\io,
+
+write('Ukupno testiranje sustava:')@\io, nl@\io,
+write('  quick_test.')@\io,
+write('   - Pokrece skup unaprijed definiranih testova za provjeru ispravnosti sustava.')@\io, nl@\io,
+write('     Testovi ukljucuju provjeru valjanih i nevaljanih transakcija te stanje mreže.')@\io, nl@\io,
 nl@\io.
+
 
 
 quick_test :-
-nl@\io,
-write('Running tests...')@\io, nl@\io,
-nl@\io,
+    nl@\io,
+    write('Pokretanje testova...')@\io, nl@\io,
+    nl@\io,
 
-write('Test 1: tx1 should be valid')@\io, nl@\io,
-( ( valid_transaction(tx1), write('  PASS')@\io, ! )
-;
-( write('  FAIL')@\io )
-),
-nl@\io, nl@\io,
+    write('Test 1: tx1 treba biti valjana')@\io, nl@\io,
+    ( ( valid_transaction(tx1), write('  PROLAZ')@\io, ! )
+    ;
+      ( write('  PAD')@\io )
+    ),
+    nl@\io, nl@\io,
 
-write('Test 2: tx3 should be invalid (insufficient funds)')@\io, nl@\io,
-( ( \naf(valid_transaction(tx3)), write('  PASS')@\io, ! )
-;
-( write('  FAIL')@\io )
-),
-nl@\io,
-diagnose_transaction(tx3, ?P3),
-write('  Reason: ')@\io, write(?P3)@\io, nl@\io,
-nl@\io,
+    write('Test 2: tx3 treba biti nevaljana (nedovoljna sredstva)')@\io, nl@\io,
+    ( ( \naf valid_transaction(tx3), write('  PROLAZ')@\io, ! )
+    ;
+      ( write('  PAD')@\io )
+    ),
+    nl@\io,
+    diagnose_transaction(tx3, ?P3),
+    write('  Razlog: ')@\io, write(?P3)@\io, nl@\io,
+    nl@\io,
 
-write('Test 3: tx4 should be invalid (negative amount)')@\io, nl@\io,
-( ( \naf(valid_transaction(tx4)), write('  PASS')@\io, ! )
-;
-( write('  FAIL')@\io )
-),
-nl@\io,
-diagnose_transaction(tx4, ?P4),
-write('  Reason: ')@\io, write(?P4)@\io, nl@\io,
-nl@\io,
+    write('Test 3: tx4 treba biti nevaljana (negativan iznos)')@\io, nl@\io,
+    ( ( \naf valid_transaction(tx4), write('  PROLAZ')@\io, ! )
+    ;
+      ( write('  PAD')@\io )
+    ),
+    nl@\io,
+    diagnose_transaction(tx4, ?P4),
+    write('  Razlog: ')@\io, write(?P4)@\io, nl@\io,
+    nl@\io,
 
-write('Test 4: Network health')@\io, nl@\io,
-network_health(?T, ?V, ?I, ?S),
-write('  Total: ')@\io, write(?T)@\io, nl@\io,
-write('  Valid: ')@\io, write(?V)@\io, nl@\io,
-write('  Invalid: ')@\io, write(?I)@\io, nl@\io,
-write('  Score: ')@\io, write(?S)@\io, write('%')@\io, nl@\io,
-nl@\io,
+    write('Test 4: Stanje mreže')@\io, nl@\io,
+    network_health(?T, ?V, ?I, ?S),
+    write('  Ukupno transakcija: ')@\io, write(?T)@\io, nl@\io,
+    write('  Valjane: ')@\io, write(?V)@\io, nl@\io,
+    write('  Nevaljane: ')@\io, write(?I)@\io, nl@\io,
+    write('  Postotak ispravnosti: ')@\io, write(?S)@\io, write('%')@\io, nl@\io,
+    nl@\io,
 
-write('Tests completed')@\io, nl@\io,
-nl@\io.
-
+    write('Testiranje završeno.')@\io, nl@\io,
+    nl@\io.
