@@ -1,0 +1,146 @@
+DEMO SCENARIJI
+Ekspertni sustav za provjeru valjanosti blockchain transakcija (Flora-2)
+
+----------------------------------------------------------------
+NAPOMENA:
+Svi primjeri pretpostavljaju da je sustav učitan naredbom:
+
+?- [blockchain_kb].
+
+----------------------------------------------------------------
+
+DEMO 1: Provjera valjane transakcije
+Opis:
+Provjera je li transakcija tx1 valjana prema osnovnim pravilima sustava.
+
+Upit:
+?- valid_transaction(tx1).
+
+Očekivani rezultat:
+Yes
+
+----------------------------------------------------------------
+
+DEMO 2: Dijagnostika nevaljane transakcije (nedovoljno sredstava)
+Opis:
+Provjera razloga zbog kojeg transakcija tx3 nije valjana.
+
+Upit:
+?- diagnose_transaction(tx3, ?Problem).
+
+Očekivani rezultat:
+?Problem = insufficient_funds
+
+----------------------------------------------------------------
+
+DEMO 3: Dijagnostika nevaljane transakcije (negativan iznos)
+Opis:
+Provjera transakcije s negativnim iznosom.
+
+Upit:
+?- diagnose_transaction(tx4, ?Problem).
+
+Očekivani rezultat:
+?Problem = negative_or_zero_amount
+
+----------------------------------------------------------------
+
+DEMO 4: Dijagnostika nevaljane transakcije (neispravan potpis)
+Opis:
+Provjera transakcije s neispravnim digitalnim potpisom.
+
+Upit:
+?- diagnose_transaction(tx6, ?Problem).
+
+Očekivani rezultat:
+?Problem = invalid_signature
+
+----------------------------------------------------------------
+
+DEMO 5: Dohvat stanja adrese
+Opis:
+Dohvat trenutnog stanja (balance) adrese marko.
+
+Upit:
+?- marko:address[balance -> ?B].
+
+Primjer rezultata:
+?B = 1000.0
+
+----------------------------------------------------------------
+
+DEMO 6: Popis svih valjanih transakcija
+Opis:
+Dohvat svih transakcija koje su valjane prema pravilima sustava.
+
+Upit:
+?- all_valid_transactions(?List).
+
+Primjer rezultata:
+?List = [tx1, tx2, tx8]
+
+----------------------------------------------------------------
+
+DEMO 7: Popis svih nevaljanih transakcija
+Opis:
+Dohvat svih transakcija koje krše barem jedno pravilo.
+
+Upit:
+?- all_invalid_transactions(?List).
+
+Primjer rezultata:
+?List = [tx3, tx4, tx5, tx6, tx7]
+
+----------------------------------------------------------------
+
+DEMO 8: Provjera rizika dvostrukog trošenja (bonus analiza)
+Opis:
+Provjera postoji li potencijalni rizik dvostrukog trošenja za transakciju.
+Ova analiza ne utječe na osnovnu valjanost transakcije.
+
+Upit:
+?- double_spend_risk(tx1).
+
+Očekivani rezultat:
+Yes / No (ovisno o stanju sustava)
+
+----------------------------------------------------------------
+
+DEMO 9: Provjera valjanosti transakcija u bloku
+Opis:
+Provjera jesu li sve transakcije unutar bloka block1 valjane.
+
+Upit:
+?- valid_block_transactions(block1).
+
+Očekivani rezultat:
+Yes
+
+----------------------------------------------------------------
+
+DEMO 10: Analiza stanja mreže
+Opis:
+Izračun osnovnih metrika sustava: ukupan broj transakcija,
+broj valjanih i nevaljanih transakcija te postotak ispravnosti.
+
+Upit:
+?- network_health(?Total, ?Valid, ?Invalid, ?Score).
+
+Primjer rezultata:
+?Total = 8
+?Valid = 3
+?Invalid = 5
+?Score = 37.5
+
+----------------------------------------------------------------
+
+DEMO 11: Brzi test sustava
+Opis:
+Pokretanje ugrađenih testnih scenarija za brzu provjeru ispravnosti sustava.
+
+Upit:
+?- quick_test.
+
+----------------------------------------------------------------
+
+KRAJ DEMO SCENARIJA
