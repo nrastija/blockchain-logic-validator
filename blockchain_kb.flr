@@ -1,7 +1,7 @@
 // ==========================================
-// ALL-IN-ONE Blockchain KB (Flora-2)
-// Author: Niko Rastija
-// Date: 07/01/2026
+// Blockchain Baza znanja
+// Autor: Niko Rastija
+// Datum: 07/01/2026
 // ==========================================
 
 // =====================
@@ -35,7 +35,7 @@ nonce => integer
 // 2) TESTNI PODACI
 // =====================
 
-// Addresses
+// adrese
 marko:address[id -> 'marko', balance -> 1000.0].
 janica:address[id -> 'janica', balance -> 500.0].
 niko:address[id -> 'niko', balance -> 750.0].
@@ -43,7 +43,7 @@ elizabeta:address[id -> 'elizabeta', balance -> 0.0].
 james:address[id -> 'james', balance -> 250.0].
 coinbase:address[id -> 'coinbase', balance -> 999999.0].
 
-// Transactions (valid examples)
+// validne transakcije
 tx1:transaction[
     tx_id -> 'tx1',
 sender_address -> marko,
@@ -71,7 +71,7 @@ timestamp -> 1767780413,
 digital_signature -> 'sig_james_tx8'
 ].
 
-// Transactions (invalid examples)
+// invalidne transakcije
 tx3:transaction[
     tx_id -> 'tx3',
 sender_address -> elizabeta,
@@ -117,7 +117,7 @@ timestamp -> 1767788113,
 digital_signature -> 'sig_elizabeta_tx7'
 ].
 
-// Blocks
+// blokovi
 genesis_block:block[
     index -> 0,
 timestamp -> 1767788222,
@@ -148,7 +148,7 @@ nonce -> 23456
 all_transactions([tx1, tx2, tx3, tx4, tx5, tx6, tx7, tx8]).
 
 // =====================
-// 3) POMOĆNI PREDIKATI ZA LISTE (bez Prolog member)
+// 3) POMOCNI PREDIKATI ZA LISTE 
 // =====================
 
 member_list(?X, [?X | ?_]).
@@ -163,30 +163,30 @@ length_list(?T, ?N1),
 // 4) PRAVILA VALIDACIJE
 // =====================
 
-// Rule 1: Amount has to be positive
+// Pravilo 1: Vrijednost mora biti pozitivna
 positive_amount(?Tx) :-
 ?Tx:transaction[amount -> ?A],
 ?A > 0.
 
-// Rule 2: sender != recipient
+// Pravilo 2: adresa primatelja nije ista kao adresa posiljatelja
 different_addresses(?Tx) :-
 ?Tx:transaction[sender_address -> ?S, recipient_address -> ?R],
 ?S !== ?R.
 
-// Rule 3: sufficient balance
+// Pravilo 3: provjera ima li dovoljno sredstava na racunu
 sufficient_balance(?Tx) :-
 ?Tx:transaction[sender_address -> ?S, amount -> ?A],
 ?S:address[balance -> ?B],
 ?B >= ?A.
 
-// Rule 4: signature valid (starts with sig_ + sender id)
+// Pravilo 4: provjera valja li potpis (pocinje sa sig_ + id posiljatelja)
 valid_signature(?Tx) :-
 ?Tx:transaction[sender_address -> ?S, digital_signature -> ?Sig],
 ?S:address[id -> ?SenderId],
 atom_concat('sig_', ?SenderId, ?Prefix)@\plg,
 sub_atom(?Sig, 0, ?Len, ?After, ?Prefix)@\plg.
 
-// Rule 5: not double spent (tx_id not already present in any block)
+// Pravilo 5: provjera da nije duplo troseno (tx_id se ne nalazi u nekom bloku)
 not_double_spent(?Tx) :-
 ?Tx:transaction[tx_id -> ?TxID],
 \naf spent_transaction(?TxID).
@@ -199,7 +199,7 @@ member_list(?T, ?TxList),
 double_spend_risk(?Tx) :-
 \naf(not_double_spent(?Tx)).
 
-// MAIN: valid transaction (wrapper to avoid HiLog issues)
+// glavna metoda
 is_valid_transaction(?Tx) :-
 ?Tx:transaction,
 positive_amount(?Tx),
@@ -211,7 +211,7 @@ valid_transaction(?Tx) :-
 is_valid_transaction(?Tx).
 
 // =====================
-// 5) DIJAGNOSTIKA (ZAŠTO JE TRANSAKCIJA FAIL)
+// 5) DIJAGNOSTIKA 
 // =====================
 
 diagnose_transaction(?Tx, insufficient_funds) :-
@@ -253,7 +253,6 @@ all_valid_in_list(?Rest).
 // 7) ANALIZA I STATISTIKA
 // =====================
 
-// Elegantno prebrojavanje (Gemini-style)
 network_health(?Total, ?Valid, ?Invalid, ?Score) :-
 ?Total = count{?Tx | ?Tx:transaction},
 ?Valid = count{?T2 | valid_transaction(?T2)},
@@ -311,12 +310,12 @@ write('  valid_transaction(tx1).')@\io,
 write('   - Provjerava je li transakcija tx1 valjana prema osnovnim pravilima.')@\io, nl@\io,
 
 write('  diagnose_transaction(tx3, ?Problem).')@\io,
-write('   - Objašnjava zasto transakcija tx3 nije valjana (ili je valjana).')@\io, nl@\io,
+write('   - Objasnjava zasto transakcija tx3 nije valjana (ili je valjana).')@\io, nl@\io,
 nl@\io,
 
 write('Adrese:')@\io, nl@\io,
 write('  marko:address[balance -> ?B].')@\io,
-write('   - Dohvaća trenutno stanje (balance) adrese marko.')@\io, nl@\io,
+write('   - Dohvaca trenutno stanje (balance) adrese marko.')@\io, nl@\io,
 nl@\io,
 
 write('Transakcije:')@\io, nl@\io,
@@ -326,16 +325,16 @@ nl@\io,
 
 write('Analiza:')@\io, nl@\io,
 write('  all_valid_transactions(?List).')@\io,
-write('   - Vraća popis svih valjanih transakcija u sustavu.')@\io, nl@\io,
+write('   - Vraca popis svih valjanih transakcija u sustavu.')@\io, nl@\io,
 
 write('  all_invalid_transactions(?List).')@\io,
-write('   - Vraća popis svih nevaljanih transakcija u sustavu.')@\io, nl@\io,
+write('   - Vraca popis svih nevaljanih transakcija u sustavu.')@\io, nl@\io,
 
 write('  double_spend_risk(tx1).')@\io,
-write('   - Provjerava postoji li rizik dvostrukog trošenja za transakciju tx1.')@\io, nl@\io,
+write('   - Provjerava postoji li rizik dvostrukog trosenja za transakciju tx1.')@\io, nl@\io,
 
 write('  network_health(?T, ?V, ?I, ?S).')@\io,
-write('   - Izračunava ukupno stanje mreže (ukupno, valjane, nevaljane transakcije i postotak ispravnosti).')@\io, nl@\io,
+write('   - Izracunava ukupno stanje mreze (ukupno, valjane, nevaljane transakcije i postotak ispravnosti).')@\io, nl@\io,
 nl@\io,
 
 write('Blokovi:')@\io, nl@\io,
@@ -351,9 +350,8 @@ nl@\io,
 write('Ukupno testiranje sustava:')@\io, nl@\io,
 write('  quick_test.')@\io,
 write('   - Pokrece skup unaprijed definiranih testova za provjeru ispravnosti sustava.')@\io, nl@\io,
-write('     Testovi ukljucuju provjeru valjanih i nevaljanih transakcija te stanje mreže.')@\io, nl@\io,
+write('     Testovi ukljucuju provjeru valjanih i nevaljanih transakcija te stanje mreze.')@\io, nl@\io,
 nl@\io.
-
 
 
 quick_test :-
@@ -396,5 +394,5 @@ quick_test :-
     write('  Postotak ispravnosti: ')@\io, write(?S)@\io, write('%')@\io, nl@\io,
     nl@\io,
 
-    write('Testiranje završeno.')@\io, nl@\io,
+    write('Testiranje zavrseno.')@\io, nl@\io,
     nl@\io.
