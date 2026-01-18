@@ -108,7 +108,12 @@ Za pokretanje sustava potrebno je imati:
 
 ### 5.2 Pokretanje Flora-2 okruženja
 
-U terminalu je potrebno pokrenuti Flora-2 interpreter naredbom:
+Ako Flora-2 već nije instalirana, potrebno ju je instalirati prema službenim
+uputama dostupnima na:
+
+https://flora.sourceforge.net/
+
+Nakon uspješne instalacije, Flora-2 se u terminalu pokreće naredbom:
 
 ```bash
 ./runflora
