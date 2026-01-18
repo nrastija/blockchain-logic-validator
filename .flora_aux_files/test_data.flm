@@ -1,8 +1,0 @@
-#include "flrheader.flh"
-#define FLORA_COMPILATION_ID 5
-
-
-'_$_$_flora''prop_descriptor'(4,'test_data.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').
-'_$_$_flora''tag_descriptor'(4,'test_data.flr',FLORA_THIS_MODULE_NAME,4,'_$_$_flora''descr_vars').
-'_$_$_flora''rule_enabled'(4,'test_data.flr',FLORA_THIS_MODULE_NAME).
-'_$_$_flora''bool_descriptor'(4,'test_data.flr',FLORA_THIS_MODULE_NAME,strict,'_$_$_flora''descr_vars').

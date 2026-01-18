@@ -1,8 +1,0 @@
-#include "flrheader.flh"
-#define FLORA_COMPILATION_ID 4
-
-
-FLORA_THIS_WORKSPACE(tblflapply)(person,alice,__newcontextvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(person,bob,__newcontextvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(age,alice,30,__newcontextvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(age,bob,25,__newcontextvar3).

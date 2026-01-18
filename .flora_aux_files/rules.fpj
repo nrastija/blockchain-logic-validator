@@ -1,5 +1,0 @@
-%% #include info for source file: /workspace/rules.flr
-
-
-:-(multifile(/('_$_$_flora''include_prj_info',2))).
-'_$_$_flora''include_prj_info'('/workspace/rules.flr',null).
